@@ -58,10 +58,10 @@ app.use(cookieSession({
 
 app.use(function (req, res, next) {
   // Update views
-  req.session.views = (req.session.views || 0) + 1
-
-  // Write response
-  res.end(req.session.views + ' views')
+  // req.session.views = (req.session.views || 0) + 1
+  //
+  // // Write response
+  // res.end(req.session.views + ' views')
 })
 
 app.use('/', routes);
